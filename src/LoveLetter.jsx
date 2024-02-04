@@ -1,5 +1,5 @@
 import './LoveLetter.css'
-import valentineCat from "./public/valentinecat.gif"
+import valentineCat from "../public/valentinecat.gif"
 
 export const LoveLetter = (props) =>{
     const handleClose = (event) =>{

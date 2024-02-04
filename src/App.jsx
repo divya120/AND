@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './App.css'
 import { LoveLetter } from './LoveLetter'
-import attackImage from "./public/attack.gif"
-import happyCat from "./public/happycat.gif"
-import postCard from "./public/postcard.jpeg"
-import pleaseMao from './public/pleaseMao.gif'
-import post from './public/post.png'
+import attackImage from "../public/attack.gif"
+import happyCat from "../public/happycat.gif"
+import postCard from "../public/postcard.jpeg"
+import pleaseMao from '../public/pleaseMao.gif'
+import post from '../public/post.png'
 
 function App() {
   const noArray = ["No","try again", "you are breaking my heart", "please", "kitts", "bb again", "mao!!!!","c'mon kitten", "Pls","cute!", "say yes", "i lovie na", "pls na mao", "me is munchkin pls", "me is dying", "heart shatter initiated", "haww"]
