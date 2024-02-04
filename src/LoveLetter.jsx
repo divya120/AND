@@ -1,4 +1,6 @@
 import './LoveLetter.css'
+import valentineCat from "./public/valentinecat.gif"
+
 export const LoveLetter = (props) =>{
     const handleClose = (event) =>{
         event.preventDefault()
@@ -20,7 +22,7 @@ export const LoveLetter = (props) =>{
 
             Could you make me the happiest girl alive by being my valentine?
         </p>
-        <img src = "./public/valentinecat.gif" className="valentine-cat"></img>
+        <img src = {valentineCat} className="valentine-cat"></img>
         <div>
         <button onClick={(event)=>{
             handleClose(event)

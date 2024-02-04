@@ -1,6 +1,11 @@
 import { useState } from 'react'
 import './App.css'
 import { LoveLetter } from './LoveLetter'
+import attackImage from "./public/attack.gif"
+import happyCat from "./public/happycat.gif"
+import postCard from "./public/postcard.jpeg"
+import pleaseMao from './public/pleaseMao.gif'
+import post from './public/post.png'
 
 function App() {
   const noArray = ["No","try again", "you are breaking my heart", "please", "kitts", "bb again", "mao!!!!","c'mon kitten", "Pls","cute!", "say yes", "i lovie na", "pls na mao", "me is munchkin pls", "me is dying", "heart shatter initiated", "haww"]
@@ -31,7 +36,7 @@ function App() {
     <div className='attack-modal'>
       <div>
       <h1>Love Attack Initiated...</h1>
-      <img src="./public/attack.gif"></img>
+      <img src={attackImage}></img>
       </div>
     </div>
   )
@@ -48,7 +53,7 @@ const happyModal = (
   <div className='attack-modal'>
     <div>
     <h1>I Love you!!! Thank you for making me so happy!</h1>
-      <img src="./public/happycat.gif"></img>
+      <img src={happyCat}></img>
       <div>
       <button onClick={()=>{
         setYes(false)
@@ -63,16 +68,16 @@ const happyModal = (
        {showLetter && <div className='letter-modal'><LoveLetter onClose ={setShowLetter}/></div>}
       {isClicked && loveAttackModal}
       {letter &&(<div>
-        <img src ="./public/postcard.jpeg" onClick={(event)=>{
+        <img src ={postCard} onClick={(event)=>{
           handleLetterClick(event)
         }}></img>
         <p>Click on me!</p>
       </div>)}
 
       <h1>Would You Be My Valentine MAO?</h1>
-      <img src='./public/pleaseMao.gif'></img>
+      <img src={pleaseMao}></img>
       <p>Click on the post to open up some mails</p>
-      <img src='./public/post.png' className='post' onClick={(event)=>{
+      <img src={post} className='post' onClick={(event)=>{
         handlePostClick(event)
       }}></img>
     <div className='button-container'>
